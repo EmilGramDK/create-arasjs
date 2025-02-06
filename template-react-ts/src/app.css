@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "aras-lib";
+
+.btn {
+  @apply px-4 py-3 text-sm font-bold text-white rounded-lg shadow-md cursor-pointer;
+}
+
+.demo-view {
+  height: 300px;
+  width: 800px;
+}
+
+.splitter-view {
+  width: calc(50% - 4px);
+}

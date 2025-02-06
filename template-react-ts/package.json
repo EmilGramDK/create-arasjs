@@ -1,0 +1,29 @@
+{
+  "name": "aras-lib-example-app",
+  "description": "A demo app showing how to use the aras-lib library for building Aras Innovator Client Extensions",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "aras-lib": "^0.0.6",
+    "babel-plugin-react-compiler": "^19.0.0-beta-27714ef-20250124",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-basic-ssl": "^1.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "globals": "^15.14.0",
+    "typescript": "~5.7.3",
+    "vite": "^6.0.5",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
