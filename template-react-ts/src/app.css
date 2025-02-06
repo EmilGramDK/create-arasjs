@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "aras-lib";
+@import "arasjs";
 
 .btn {
   @apply px-4 py-3 text-sm font-bold text-white rounded-lg shadow-md cursor-pointer;

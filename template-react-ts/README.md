@@ -1,6 +1,6 @@
-# Aras Lib Example App
+# ArasJS React Typescript Template
 
-🚀 A simple example and step-by-step guide to getting started with **Aras-Lib**.
+🚀 A simple example and step-by-step guide to getting started with **ArasJS**.
 
 This template is built with **TypeScript, React, and Vite** for a seamless development experience.
 
@@ -22,11 +22,11 @@ Add the following lines to **OAuth.config** located at:
 `C:\Program Files (x86)\Aras\Innovator\OAuthServer`
 
 ```xml
-<!-- Aras Lib Config -->
+<!-- ArasJS Config -->
 <redirectUri value='https://localhost:3000/InnovatorServer/Client/OAuth/RedirectCallback' />
 <redirectUri value='https://localhost:3000/InnovatorServer/Client/OAuth/SilentCallback' />
 <redirectUri value='https://localhost:3000/InnovatorServer/Client/OAuth/PopupCallback' />
-<!-- Aras Lib Config -->
+<!-- ArasJS Config -->
 ```
 
 ### 2️⃣ Configure Application

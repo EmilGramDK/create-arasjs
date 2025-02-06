@@ -1,6 +1,6 @@
 /**
  * Demo of the Grid Service to create a simple grid
- * with aras-lib
+ * with arasjs
  */
 export function DemoGrid() {
   const showGrid = () => {

@@ -1,7 +1,7 @@
 {
-  "name": "aras-lib-example-app",
-  "description": "A demo app showing how to use the aras-lib library for building Aras Innovator Client Extensions",
-  "private": false,
+  "name": "arasjs-react-ts-example",
+  "description": "A demo app showing how to use the ArasJS library for building Aras Innovator Client Extensions",
+  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.0",
-    "aras-lib": "^0.0.6",
+    "arasjs": "latest",
     "babel-plugin-react-compiler": "^19.0.0-beta-27714ef-20250124",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

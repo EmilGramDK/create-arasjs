@@ -1,0 +1,12 @@
+{
+  "name": "arasjs-angular-ts-example",
+  "description": "A demo app showing how to use the ArasJS library for building Aras Innovator Client Extensions",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "arasjs": "latest"
+  },
+  "devDependencies": {}
+}
