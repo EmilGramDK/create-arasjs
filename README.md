@@ -25,7 +25,7 @@ This will create a directory named `my-app` in your current folder, set up the p
 
 You will have to add localhost:3000 to the allowed redirect URIs in your Aras Innovator OAuth Configuration.
 
-Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#setup) to get started.
+Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#readme) to get started.
 
 ## Available Commands
 
