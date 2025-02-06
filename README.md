@@ -1,6 +1,6 @@
 # create-arasjs <a href="https://npmjs.com/package/create-arasjs"><img src="https://img.shields.io/npm/v/create-arasjs" alt="npm package"></a>
 
-A CLI tool to quickly generate a new project using the ArasJS Library from a template
+create-arasjs is a tool to quickly start a project from a basic template for popular frameworks.
 
 > **Note:**
 > ArasJS is not affiliated with, endorsed by, or sponsored by Aras Corporation. It is an independent open-source library designed to assist developers in building applications that run inside Aras Innovator.
@@ -13,19 +13,22 @@ To create a new Aras application, run the following command:
 npm create arasjs my-app
 ```
 
-or
-
-```sh
-npx create-arasjs my-app
-```
-
 This will create a directory named `my-app` in your current folder, set up the project structure, and install all dependencies automatically.
+
+Currently supported template presets include:
+
+- [react-ts](/template-react-ts)
+
+Currently in progress:
+- [angular-ts](/template-angular-ts)
+- [vanilla-ts](/template-vanilla-ts)
+- [vanilla-js](/template-vanilla-js)
 
 ## Setup ArasJS App
 
 You will have to add localhost:3000 to the allowed redirect URIs in your Aras Innovator OAuth Configuration.
 
-Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#readme) to get started.
+Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#setup) to get started.
 
 ## Available Commands
 
