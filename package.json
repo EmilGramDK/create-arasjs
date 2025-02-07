@@ -1,22 +1,17 @@
 {
-  "name": "create-aras-app",
+  "name": "create-arasjs",
   "description": "A CLI tool to quickly generate a new project using the ArasJS Library from a template.",
-  "version": "0.0.1",
+  "version": "0.0.7",
   "main": "src/index.js",
   "type": "module",
   "files": [
     "src",
+    "template-react-ts",
     "template-*"
   ],
   "bin": {
-    "create-aras-app": "./index.js"
+    "create-arasjs": "./src/index.js"
   },
-  "keywords": [
-    "aras",
-    "aras innovator",
-    "arasjs",
-    "arasjs example app"
-  ],
   "author": "EmilGramDK",
   "license": "MIT",
   "repository": {
@@ -36,6 +31,12 @@
     "commander": "^12.1.0",
     "picocolors": "^1.1.1"
   },
+  "keywords": [
+    "aras",
+    "aras innovator",
+    "arasjs",
+    "arasjs example app"
+  ],
   "publishConfig": {
     "access": "public"
   }

@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 
+import { fileURLToPath } from "url";
 import { program } from "commander";
 import path from "path";
 import fs from "fs";
 import { input, select, Separator } from "@inquirer/prompts";
 import colors from "picocolors";
 import { execSync } from "child_process";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const { cyan, blue, redBright, green, yellow, magenta, bold, italic, strikethrough } = colors;
 
@@ -109,7 +112,7 @@ program
     fs.mkdirSync(projectPath);
 
     // Find template folder
-    const templatePath = path.join(process.cwd(), `template-${template}`);
+    const templatePath = path.join(__dirname, `../template-${template}`);
 
     // Copy template files to project directory
     moveRecursiveSync(templatePath, projectPath);
