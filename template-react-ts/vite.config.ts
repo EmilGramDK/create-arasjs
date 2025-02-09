@@ -5,6 +5,12 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 import { viteConfig } from "./app.config";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+let server = viteConfig.arasProxy.server;
+server = server.toLowerCase();
+server = viteConfig.arasProxy.useSSL
+  ? server.replace("http://", "https://")
+  : server.replace("https://", "http://");
+
 export default defineConfig({
   plugins: [
     react({
@@ -21,7 +27,7 @@ export default defineConfig({
     open: viteConfig.arasProxy.openArasOnStart ? "/innovatorserver/client" : false,
     proxy: {
       "/innovatorserver": {
-        target: viteConfig.arasProxy.server.toLowerCase(),
+        target: server,
         secure: false,
         changeOrigin: false,
         rewrite: (path) => path.replace(/^\/innovatorserver/, ""),

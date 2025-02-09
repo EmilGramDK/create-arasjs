@@ -126,8 +126,8 @@ program
     );
     fs.writeFileSync(appConfigPath, updatedAppConfig);
 
-    // Rename _gitignore to .gitignore
-    fs.renameSync(path.join(projectPath, "_gitignore"), path.join(projectPath, ".gitignore"));
+    // // Rename _gitignore to .gitignore
+    // fs.renameSync(path.join(projectPath, "_gitignore"), path.join(projectPath, ".gitignore"));
 
     console.log(green("Installing npm dependencies..."));
     execSync("npm install", { stdio: "inherit", cwd: projectPath });
