@@ -62,7 +62,7 @@ To add the application to the **Table of Contents (TOC)**:
 2. Navigate to **TOC → Administration → Configuration → TOC Editor**.
 3. Add a new page as shown below:
 
-   ![TOC Configuration](../src/toc.png)
+   ![TOC Configuration](https://github.com/EmilGramDK/create-arasjs/blob/81952512dfa8cdfa4951d146d0f88d2ed7e76a75/src/toc.png)
 
 ## 🚀 Start Application
 
