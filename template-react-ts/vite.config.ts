@@ -5,7 +5,9 @@ import basicSsl from "@vitejs/plugin-basic-ssl";
 import { viteConfig } from "./app.config";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-let server = viteConfig.arasProxy.server;
+const { useTailwind, port, arasProxy } = viteConfig;
+
+let server = arasProxy.server;
 server = server.toLowerCase();
 server = viteConfig.arasProxy.useSSL
   ? server.replace("http://", "https://")
@@ -19,12 +21,13 @@ export default defineConfig({
       },
     }),
     tsconfigPaths(),
-    ...(viteConfig.arasProxy.useSSL ? [basicSsl()] : []),
-    ...(viteConfig.useTailwind ? tailwindcss() : []),
+    ...(arasProxy.useSSL ? [basicSsl()] : []),
+    ...(useTailwind ? tailwindcss() : []),
   ],
   server: {
-    port: viteConfig.port,
-    open: viteConfig.arasProxy.openArasOnStart ? "/innovatorserver/client" : false,
+    port,
+    open: arasProxy.openArasOnStart ? "/innovatorserver/client" : false,
+
     proxy: {
       "/innovatorserver": {
         target: server,
