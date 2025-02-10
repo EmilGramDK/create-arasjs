@@ -12,57 +12,11 @@ To install dependencies, run the following command:
 npm install
 ```
 
-## 🔧 Usage
+## 🔧 Pre Setup (Important)
 
-### 1️⃣ Configure Aras OAuth
+You will have to add localhost:3000 to the allowed redirect URIs in your Aras Innovator OAuth Configuration.
 
-To enable authentication, add `localhost:3000` to the allowed redirect URIs in your **Aras Innovator OAuth Configuration**.
-
-Add the following lines to **OAuth.config** located at:
-`C:\Program Files (x86)\Aras\Innovator\OAuthServer`
-
-```xml
-<!-- ArasJS Config -->
-<redirectUri value='https://localhost:3000/InnovatorServer/Client/OAuth/RedirectCallback' />
-<redirectUri value='https://localhost:3000/InnovatorServer/Client/OAuth/SilentCallback' />
-<redirectUri value='https://localhost:3000/InnovatorServer/Client/OAuth/PopupCallback' />
-<!-- ArasJS Config -->
-```
-
-### 2️⃣ Configure Application
-
-Update `app.config.ts` with your Aras Innovator settings.
-
-```typescript
-// Application configuration
-export const appConfig = {};
-
-// Vite configuration
-export const viteConfig = {
-  // Enable Tailwind CSS V4
-  useTailwind: true,
-
-  // Port for Vite development server
-  port: 3000,
-
-  // Proxy settings for Innovator Server
-  arasProxy: {
-    server: "https://aras.example.com/innovatorserver",
-    useSSL: true,
-    openArasOnStart: true,
-  },
-};
-```
-
-### 3️⃣ Add to TOC
-
-To add the application to the **Table of Contents (TOC)**:
-
-1. Open **Aras Innovator**.
-2. Navigate to **TOC → Administration → Configuration → TOC Editor**.
-3. Add a new page as shown below:
-
-   ![TOC Configuration](https://github.com/EmilGramDK/create-arasjs/blob/81952512dfa8cdfa4951d146d0f88d2ed7e76a75/src/toc.png)
+Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#pre-setup) to get started.
 
 ## 🚀 Start Application
 

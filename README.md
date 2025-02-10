@@ -20,15 +20,16 @@ Currently supported template presets include:
 - [react-ts](/template-react-ts)
 
 Currently in progress:
+
 - [angular-ts](/template-angular-ts)
 - [vanilla-ts](/template-vanilla-ts)
 - [vanilla-js](/template-vanilla-js)
 
-## Setup ArasJS App
+## Pre-Setup ArasJS App
 
 You will have to add localhost:3000 to the allowed redirect URIs in your Aras Innovator OAuth Configuration.
 
-Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#setup) to get started.
+Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#pre-setup) to get started.
 
 ## Available Commands
 
