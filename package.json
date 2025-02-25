@@ -1,7 +1,7 @@
 {
   "name": "create-arasjs",
   "description": "A CLI tool to quickly generate a new project using the ArasJS Library from a template.",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "src/index.js",
   "type": "module",
   "files": [

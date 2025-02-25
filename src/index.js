@@ -54,11 +54,13 @@ Example: ${cyan(`npm create arasjs my-app ${italic("-t react-ts")}`)}
 
 Options:
   -t, --template {name}        Use a specific template
-
+  `;
+/*
 Available templates:
 ${availableTemplates.map((template) => `  -t ${template.color(bold(`${template.value}`))}`).join("\n")}
 ${disabledTemplates.map((template) => `  -t ${template.color(`${strikethrough(template.value)}`)} ${template.disabled}`).join("\n")}
 `;
+*/
 
 program
   .version("0.0.1")
@@ -118,16 +120,10 @@ program
     moveRecursiveSync(templatePath, projectPath);
 
     // Update app.config.ts with Innovator Server URL
-    const appConfigPath = path.join(projectPath, "app.config.ts");
+    const appConfigPath = path.join(projectPath, "vite.config.ts");
     const appConfig = fs.readFileSync(appConfigPath, "utf8");
-    const updatedAppConfig = appConfig.replace(
-      "https://aras.example.com/innovatorserver",
-      innovatorServer
-    );
+    const updatedAppConfig = appConfig.replace("https://aras.example.com/innovatorserver", innovatorServer);
     fs.writeFileSync(appConfigPath, updatedAppConfig);
-
-    // // Rename _gitignore to .gitignore
-    // fs.renameSync(path.join(projectPath, "_gitignore"), path.join(projectPath, ".gitignore"));
 
     console.log(green("Installing npm dependencies..."));
     execSync("npm install", { stdio: "inherit", cwd: projectPath });
