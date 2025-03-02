@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-/// <reference types="arasjs-types/globals" />
+/// <reference types="arasjs/dist/globals" />
 
 import "./app.css";
 import { StrictMode } from "react";

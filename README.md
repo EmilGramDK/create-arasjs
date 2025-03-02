@@ -10,7 +10,7 @@ create-arasjs is a tool to quickly start a project from a basic template for pop
 To create a new Aras application, run the following command:
 
 ```sh
-npm create arasjs my-app
+npx create-arasjs my-app
 ```
 
 This will create a directory named `my-app` in your current folder, set up the project structure, and install all dependencies automatically.
@@ -27,7 +27,7 @@ Currently in progress:
 
 ## Pre-Setup ArasJS App
 
-You will have to add localhost:3000 to the allowed redirect URIs in your Aras Innovator OAuth Configuration.
+You will have to add localhost:3456 to the allowed redirect URIs in your Aras Innovator OAuth Configuration.
 
 Please read the [ArasJS Setup Guide](https://npmjs.com/package/arasjs#pre-setup) to get started.
 
@@ -41,7 +41,7 @@ Starts the development server.
 npm run dev
 ```
 
-Once the server is running, open [https://localhost:3000/innovatorserver/client](https://localhost:3000/innovatorserver/client) in your browser.
+Once the server is running, open [https://localhost:3456/innovatorserver/client](https://localhost:3456/innovatorserver/client) in your browser.
 
 - The application will automatically reload when you make changes to the source code.
 - Build errors and lint warnings will appear in the console.
@@ -51,7 +51,6 @@ Once the server is running, open [https://localhost:3000/innovatorserver/client]
 For more information about the libraries used in this template, check out the following resources:
 
 - [ArasJS](https://www.npmjs.com/package/arasjs) - Learn how to integrate and use the ArasJS library.
-- [ArasJS Types](https://www.npmjs.com/package/arasjs-types) - Type definitions for ArasJS applications.
 
 ## License
 
